@@ -1,0 +1,63 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+#container{
+    margin: 100px auto;
+    width: 80%;
+    max-width: 650px;
+    background-color: antiquewhite;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card li{
+    display: flex;
+    gap:10px;
+    padding: 20px;
+    text-align: center;
+}
+.words{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+/* 너비가 768px */
+@media all and (max-width:768px){
+    .card li{
+        gap: 5px;
+        color: rgb(79, 153, 4);
+        font-size: 13px;
+        flex-direction: column;
+    }
+    #container{
+        margin: 100px auto;
+        width: 40%;
+        max-width: 650px;
+        background-color: antiquewhite;
+    }
+}
+/* 너비가 320px */
+@media all and (max-width:320px){
+    .card li{
+        gap: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+        flex-direction: column;
+        padding: 10px;
+    }
+    #container{
+        margin: 100px auto;
+        width: 40%;
+        max-width: 650px;
+        background-color: rgb(215, 233, 250);
+    }
+}
